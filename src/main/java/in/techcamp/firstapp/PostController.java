@@ -12,4 +12,9 @@ public class PostController {
         model.addAttribute("sampleText", sampleText);
         return "hello";
     }
+
+    @GetMapping
+    public String showList(){
+        return "index";
+    }
 }
